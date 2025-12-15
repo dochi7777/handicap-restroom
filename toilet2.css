@@ -20,6 +20,12 @@ html, body {
   position: relative;
 }
 
+@media screen and (max-width:768px) {
+.left-panel {
+  width: 30%;
+  }
+}
+
 .left-panel h1 {
   position: absolute;
   top: 50%;
@@ -32,12 +38,24 @@ html, body {
   word-break: keep-all;
 }
 
+@media screen and (max-width:768px) {
+.left-panel h1 {
+    font-size: 10px;
+  }
+}
+
 .right-panel {
   width: 50%;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   background: #000;
+}
+
+@media screen and (max-width:768px) {
+.right-panel {
+  width: 70%;
+  }
 }
 
 .image-scroll img {
