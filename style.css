@@ -38,6 +38,12 @@ body {
   }
 }
 
+@media screen and (max-width:390px) {
+ .title {
+    font-size: 20px;
+  }
+}
+
 .container {
   height: calc(100vh - 86px);
   display: grid;
