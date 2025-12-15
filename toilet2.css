@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel {
+  width: 50%;
+  position: relative;
+}
+
+.left-panel h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: normal;
+  word-break: keep-all;
+}
+
+.right-panel {
+  width: 50%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #000;
+}
+
+.image-scroll img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+}
